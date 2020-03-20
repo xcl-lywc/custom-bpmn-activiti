@@ -1,0 +1,316 @@
+/*重置样式*/
+body {
+  margin: 0;
+  font-family: "微软雅黑";
+}
+ul li{
+  list-style: none;
+}
+a{ 
+  text-decoration:none;
+}
+p{ 
+  margin: 0; 
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 14px;
+}
+h5 {
+  font-size: 14px;
+  font-weight: normal;
+}
+h1, h2, h3, h4, h5 {
+  padding: 0 15px;
+}
+p, span, strong, i {
+  font-size: 14px;
+}
+
+/* 快捷样式 */
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.hover-cursor:hover {
+  cursor: pointer;
+}
+.line-feed{
+  word-wrap: break-word;//换行
+}
+.clearfix{
+  clear: both;
+}
+.clearfix:before,.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both
+}
+.ellipsis{
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.no-data{
+  text-align:center;
+  width:100%;
+  line-height: 60px;
+  color: #909399;
+  font-weight: 400;
+  font-size:14px;
+  // background:#fff;
+}
+
+/* 字体样式 */
+.text-center-middle{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: #666;
+}
+.text-indent {
+  text-indent: 30px;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-center {
+  text-align: center!important;
+}
+.text-left {
+  text-align: left!important;
+}
+.text-right {
+  text-align: right!important;
+}
+.text-primary {
+  color: #409EFF;
+}
+.text-success {
+  color: #67C23A;
+}
+.text-warning {
+  color: #E6A23C;
+}
+.text-danger {
+  color: #F56C6C!important;
+}
+.text-info {
+  color: #909399!important;
+}
+.font-size-12{
+  font-size:12px;
+}
+.font-size-16{
+  font-size:16px;
+}
+.font-size-36{
+  font-size:36px;
+}
+.font-red-color{
+  color:#F56C6C;
+}
+.font-blue-color{
+  color:#409EFF;
+}
+.font-green-color{
+  color: #009688;
+}
+
+/* 背景色 */
+.bg-linen-color{
+  background:#FAF0E6 !important;
+}
+.bg-aliceblue-color{
+  background:#F0F8FF !important;
+}
+.bg-teal-color{
+  background:#FFDAB9 !important;
+}
+
+/* 表单与按钮 */
+input{
+  padding: 0;
+  border: none;
+}
+button{
+  border: none;
+  padding: 0;
+  outline: none;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #333333;
+}
+
+/* padding 内边距 */
+.pad0 {
+  padding: 0;
+}
+.pad5{
+  padding: 5px;
+}
+.pad10{
+  padding: 10px;
+}
+.pad20{
+  padding: 20px;
+}
+.padt15{
+  padding-top:15px;
+}
+.padt17{
+  padding-top: 17px;
+}
+.padr15{
+  padding-right: 15px;
+}
+.padr20{
+  padding-right: 20px;
+}
+
+/* marging 外边距 */
+.mar0{
+  margin:0px;
+}
+.mar5{
+  margin:5px;
+}
+.mar10{
+  margin:10px;
+}
+.mart5{
+  margin-top: 5px;
+}
+.mart8{
+  margin-top: 8px;
+}
+.mart10{
+  margin-top: 10px;
+}
+.marl40{
+  margin-left:40px;
+}
+.marl10{
+  margin-left:10px;
+}
+.mar20{
+  margin: 20px;
+}
+.mart20{
+  margin-top:20px;
+}
+.marl20{
+  margin-left:20px;
+}
+.marl25{
+  margin-left:25px;
+}
+.marr40{
+  margin-right:40px;
+}
+.marr10{
+  margin-right:10px;
+}
+.marr20{
+  margin-right:20px;
+}
+.marr30{
+  margin-right:30px;
+}
+.marr24{
+  margin-right:24px;
+}
+.marb20{
+  margin-bottom:20px;
+}
+.marb10{
+  margin-bottom:10px;
+}
+
+/* width和height */
+.w50{
+  width: 100px !important;
+}
+.w140{
+  width: 140px !important;
+}
+.w200{
+  width: 200px !important;
+}
+.w180{
+  width: 180px !important;
+}
+.w300{
+  width: 300px !important;
+}
+.w300{
+	width: 300px !important;
+}
+.w600{
+  width: 600px !important;
+}
+.fill-width {
+  width: 100%!important;
+}
+.overflow-hidden{
+  overflow:hidden;
+}
+.h300{
+  height: 300px !important;
+}
+.line-height-300{
+  line-height: 300px !important;
+}
+.line-height-100{
+  line-height: 100px !important;
+}
+
+/*滚动条样式*/
+body::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{  
+  width: 2px;
+  height: 2px;
+  background-color: #F5F5F5;
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/
+/*::-webkit-scrollbar-track
+{  
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}  */
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+  background-color: #949494;
+}

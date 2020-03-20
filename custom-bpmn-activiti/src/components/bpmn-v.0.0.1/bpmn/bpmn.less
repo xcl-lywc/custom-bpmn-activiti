@@ -1,0 +1,142 @@
+/*左边工具栏以及编辑节点的样式*/
+@import './resourse/assets/diagram-js.css';
+@import './resourse/assets/bpmn-font/css/bpmn.css';
+@import './resourse/assets/bpmn-font/css/bpmn-codes.css';
+@import './resourse/assets/bpmn-font/css/bpmn-embedded.css';
+/*右边工具栏样式*/
+@import './resourse/assets/bpmn-js-properties-panel.css';
+/*font*/
+@import './resourse/font/iconfont.css';
+
+/* 快捷样式 */
+.mart18{
+	margin-top:18px;
+}
+.cursor-pointer{
+	cursor: pointer;
+}
+.font-color-primary{
+	color:#409EFF;
+}
+.no-data{
+	text-align:center;
+  width:100%;
+  line-height: 60px;
+  color: #909399;
+  font-weight: 400;
+  font-size:14px;
+  // background:#fff;
+}
+.w300{
+	width:300px !important;
+}
+
+/* bpmn容器或模块 */
+.BPMN{
+	overflow:hidden;
+	background:#fff;
+	.menu-box{
+		height:100vh;
+		h4{
+			text-align: center;
+	    padding: 10px 0;
+	    color: #222;
+	    font-size: 18px;
+	    font-weight: 600;
+		}
+		.el-menu{
+			height: calc(100% - 88px);
+		}
+	}
+	.header-box{
+		text-align:center;
+		line-height:60px;
+		font-weight:bold;
+	}
+	.container-box{
+		.containers{
+		  width: 100%;
+		  height: calc(100vh - 160px);
+		  position:relative;
+		  .canvas{
+		    width: 100%;
+		    height: 100%;
+		    box-sizing: border-box;
+		    border: 1px solid #ccc;
+		    border-radius:5px;
+		  }
+		  .panel{
+		    position: absolute;
+		    right: 0px;
+		    top: 0px;
+		    width: 300px;
+		    height:100%;
+		    overflow:auto;
+		    box-sizing: border-box;
+		    border: 1px solid #ccc;
+		    border: 1px solid #ccc;
+		    background: #f8f8f8;
+		  }
+		}
+		.viewer-container{
+			height: calc(100vh - 100px) !important;
+		}
+	}
+	.operate-box{
+		.operate{
+		  height:20px;
+		  padding: 0 20px;
+		  box-sizing:border-box;
+		  button,a{
+		    margin:15px 5px 5px 5px;
+		  }
+		  a{
+		  	font-size: 14px;
+		  }
+		  .panel-btn{
+		  	
+		  }
+		  .color-picker-position{
+				margin-top: 10px;
+				margin-right:10px;
+			}
+		}
+	}
+	.bjs-powered-by{
+		display: none;
+	}
+}
+
+
+/* 流程节点样式 */
+.nodeSuccess:not(.djs-connection) .djs-visual > :nth-child(1) {
+  stroke: green !important;
+  stroke-width: 3px;
+  /* elements as success */
+}
+
+.nodeError:not(.djs-connection) .djs-visual > :nth-child(1) {
+  stroke: red !important;
+  stroke-width: 3px;
+  /* elements as error */
+}
+
+.lineSuccess:not(.djs-shape) .djs-visual :last-child{
+  stroke: green !important;
+}
+
+.lineError:not(.djs-shape) .djs-visual :last-child{
+  stroke: red !important;
+}
+
+
+.highlight:not(.djs-connection) .djs-visual > :nth-child(1) {
+  fill: green !important; /* color elements as green */
+}
+
+.highlight-overlay {
+  background-color: green; /* color elements as green */
+  opacity: 0.4;
+  pointer-events: none; /* no pointer events, allows clicking through onto the element */
+  border-radius: 10px;
+}
