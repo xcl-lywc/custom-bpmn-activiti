@@ -22,7 +22,7 @@
   },
   "homepage": "",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bpmn-js": "^5.1.1",
     "bpmn-js-properties-panel": "^0.32.2",
     "customform": "^0.1.2",
